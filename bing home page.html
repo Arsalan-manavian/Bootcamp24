@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.bing.com/th?id=OHR.Liondance_ZH-CN3274053122_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #container {
+            width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        #header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #logo {
+            width: 200px;
+            height: auto;
+        }
+        #search-form {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #search-box {
+            width: 600px;
+            height: 40px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            outline: none;
+        }
+        #search-btn {
+            width: 100px;
+            height: 40px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        #search-btn:hover {
+            background-color: #45a049;
+        }
+        .options {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .option {
+            font-size: 18px;
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <img id="logo" src="https://www.bing.com/sa/simg/hpc27.png" alt="Bing Logo">
+        </div>
+        <div id="search-form">
+            <form action="https://www.bing.com/search" method="GET">
+                <input type="text" id="search-box" name="q" placeholder="Search Bing">
+                <button type="submit" id="search-btn">Search</button>
+            </form>
+        </div>
+        <div class="options">
+            <a href="#" class="option">Images</a>
+            <a href="#" class="option">Videos</a>
+            <a href="#" class="option">Maps</a>
+            <a href="#" class="option">News</a>
+            <a href="#" class="option">More</a>
+        </div>
+    </div>
+</body>
+</html>
